@@ -1,4 +1,4 @@
-[![TAM - Tama](https://img.shields.io/static/v1?label=TAM&message=Tama&color=b51839)](https://www.triamec.com/en/tam-api.html)
+[![TAM - Tama](https://img.shields.io/static/v1?label=TAM&message=Tama&color=b51839)](https://www.triamec.com/en/tam-tama.html)
 
 # Step Moves Example with Tama
 
