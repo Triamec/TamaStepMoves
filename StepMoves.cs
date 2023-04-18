@@ -4,7 +4,6 @@ using Triamec.Tama.Vmid5;
 using Triamec.Tama.Rlid19;
 using System.Reflection;
 using Triamec.TriaLink;
-using System.Threading;
 
 [assembly:AssemblyVersion("2.0.0.0")]
 
@@ -12,14 +11,13 @@ using System.Threading;
 // program. This file is located in the bin\Debug or bin\Release subfolders and will commonly be copied into the
 // Tama directory of the default workspace, too.
 [Tama]
-static class Messablauf {
+static class StepMoves {
 	
 	// Define constants for enhanced readability.
 	static class State {
 		public const int Idle = 0;
-        public const int ReadParams = 1;
-        public const int WorkingPositive = 2;
-        public const int WorkingNegative = 3;
+        public const int WorkingPositive = 1;
+        public const int WorkingNegative = 2;
 		public const int Wait = 99;
 	}
 	static int _return_state;
@@ -38,6 +36,8 @@ static class Messablauf {
 	static int _repeats;
 	static float _step_velocity;
 	static float _step_size;
+	static float _start_pos_positive;
+	static float _start_pos_negative;
 
 
 	// Choose how to run the program. Additional entry points for other tasks can be specified in this same program.
@@ -50,33 +50,25 @@ static class Messablauf {
 		{
 
 			case State.Idle:
-				if (Register.Application.TamaControl.IsochronousMainCommand != 0)
-				{
-					_counter = 0;
-					Register.Application.TamaControl.IsochronousMainState = State.ReadParams;
-				}
-				break;
-
-			case State.ReadParams:
-				_wait = Register.Application.Parameters.Integers[0];
-				_repeats = Register.Application.Parameters.Integers[1];
-				_step_size = Register.Application.Parameters.Floats[0];
-				_step_velocity = Register.Application.Parameters.Floats[1];
-
 				if (Register.Application.TamaControl.IsochronousMainCommand == Command.MeasurePositive ||
                     Register.Application.TamaControl.IsochronousMainCommand == Command.MeasurePositiveAndNegative)
                 {
-					MoveTo(-365f);
+                    _counter = 0;
+                    ReadParameters();
+                    MoveTo(_start_pos_positive);
                     _timer = _wait;
                     Register.Application.TamaControl.IsochronousMainState = State.WorkingPositive;
 				}
 				else if (Register.Application.TamaControl.IsochronousMainCommand == Command.MeasureNegative)
 				{
-					MoveTo(0f);
+                    _counter = 0;
+                    ReadParameters();
+                    MoveTo(_start_pos_negative);
                     _timer = _wait;
                     Register.Application.TamaControl.IsochronousMainState = State.WorkingNegative;
 				}
 				break;
+
 
 			case State.WorkingPositive:
 				if (_timer == 0)
@@ -141,10 +133,20 @@ static class Messablauf {
 		Register.Application.Variables.Integers[0] = _counter;
     }
 
+	static void ReadParameters()
+	{
+        _wait = Register.Application.Parameters.Integers[0];
+        _repeats = Register.Application.Parameters.Integers[1];
+        _step_size = Register.Application.Parameters.Floats[0];
+        _step_velocity = Register.Application.Parameters.Floats[1];
+        _start_pos_positive = Register.Application.Parameters.Floats[2];
+        _start_pos_negative = Register.Application.Parameters.Floats[3];
+    }
+
 	static void MoveStepAndWait(float step, int wait)
 	{
         _timer = wait;
-        _counter = _counter + 1;
+        _counter ++;
         Register.Axes_0.Commands.PathPlanner.Xnew = step;
         Register.Axes_0.Commands.PathPlanner.Vnew = _step_velocity;
         Register.Axes_0.Commands.PathPlanner.Command = PathPlannerCommand.MoveRelative_Vel;

@@ -41,7 +41,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Messablauf.cs" />
+    <Compile Include="StepMoves.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
