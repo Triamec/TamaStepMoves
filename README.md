@@ -13,20 +13,20 @@ The following screenshot shows a step moves procedure, with a start position at 
 
 ## Parameters
 
-The following parameters are configurable in *Register.Application.Parameters*:
+The following parameters are configurable in `Register.Application.Parameters`:
 
 | Register      | Description                                         |
 | ------------- | --------------------------------------------------- |
-| *Integers[0]* | Wait time between steps in 10kHz counts, 10000 = 1s |
-| *Integers[1]* | Step count                                          |
-| *Floats[0]*   | Step size in axis units                             |
-| *Floats[1]*   | Step velocity in axis units                         |
-| *Floats[2]*   | Start position for positive steps procedure         |
-| *Floats[3]*   | Start position for negative steps procedure         |
+| `Integers[0]` | Wait time between steps in 10kHz counts, 10000 = 1s |
+| `Integers[1]` | Step count                                          |
+| `Floats[0]`   | Step size in axis units                             |
+| `Floats[1]`   | Step velocity in axis units                         |
+| `Floats[2]`   | Start position for positive steps procedure         |
+| `Floats[3]`   | Start position for negative steps procedure         |
 
 ## Commands
 
-The following commands are implemented and can be set in *Register.Application.TamaControl.IsochronousMainCommand*. The command resets to *None* automatically, after finishing a commanded procedure.
+The following commands are implemented and can be set in `Register.Application.TamaControl.IsochronousMainCommand`. The command resets to *None* automatically, after finishing a commanded procedure.
 
 | Command                    | Value | Description                                             |
 | -------------------------- | ----- | ------------------------------------------------------- |
@@ -37,9 +37,9 @@ The following commands are implemented and can be set in *Register.Application.T
 
 ## Signals
 
-*Register.Application.Variables.Integers[0]* indicates the current step index.
+`Register.Application.Variables.Integers[0]` indicates the current step index.
 
-*Register.Application.TamaControl.IsochronousMainState* indicates the current procedure state.
+`Register.Application.TamaControl.IsochronousMainState` indicates the current procedure state.
 
 | State           | Value | Description                                   |
 | --------------- | ----- | --------------------------------------------- |
