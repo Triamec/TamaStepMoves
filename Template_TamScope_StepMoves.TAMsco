@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="Scope.4" SaveDate="2023-04-18T08:29:55.6634817+02:00" PrintFont="Segoe UI, 9pt" SamplingTime="PT0.0001S" RefreshTime="PT0.0416666S" ScopeCharting="true" Trigger="cc9758a1-20bc-4e13-bcf5-01bc781d7e61" FirstCursor="c64b68b6-23df-4bbe-9487-274ea2827a71" SecondCursor="c48c5061-703e-40b5-8567-a52c1d6dee41" PlotAreaBorder="Dotted" PlotAreaColor="Azure" ZoomFactor="2" Caption="">
+  <Plots>
+    <Plot Visible="true" LineColor="#CC79A7" LineStyle="Solid" LineWidth="1" PointColor="#663C53" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Axes[0]/Signals/CurrentController/ActualCurrentQ" Name="ActualCurrentQ₪MyAxis" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="c3c10f69-4ca0-49a2-ac0d-d1b148b6535b">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="#000000" LineStyle="Solid" LineWidth="2" PointColor="#000000" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Axes[0]/Signals/PathPlanner/Position" Name="Position₪MyAxis" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="5916000f-6eaa-430b-8426-97312f92f01c">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>7</Width>
+        <Height>7</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="#E69F00" LineStyle="Solid" LineWidth="2" PointColor="#734F00" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Axes[0]/Signals/PathPlanner/Velocity" Name="Velocity₪MyAxis" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="0fd27829-e098-4b77-b04a-e9f10f31e509">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>7</Width>
+        <Height>7</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="#A1A1A1" LineStyle="Solid" LineWidth="1" PointColor="#505050" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Axes[0]/Signals/PositionController/MasterError" Name="MasterError₪MyAxis" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="7826d989-f823-4bb2-a366-2bb063a0591e">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="DarkOliveGreen" LineStyle="Solid" LineWidth="1" PointColor="Yellow" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Application/Variables/Integers[0]" Name="Integer 0₪Triamec-616" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="488a5a98-bb8b-4833-86a2-5a57792739e6">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="Sienna" LineStyle="Solid" LineWidth="1" PointColor="Yellow" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Application/Variables/Floats[0]" Name="Float 0₪Triamec-616" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="488a5a98-bb8b-4833-86a2-5a57792739e6">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="DarkOrchid" LineStyle="Solid" LineWidth="1" PointColor="Yellow" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Application/TamaControl/IsochronousMainState" Name="IsochronousMainState₪Triamec-616" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="e03e81b3-f305-4603-bfe0-c942efd464d1">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="#8B0000" LineStyle="Solid" LineWidth="2" PointColor="Yellow" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Application/TamaControl/IsochronousMainCommand" Name="IsochronousMainCommand₪Triamec-616" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="82282624-989b-4b99-85ad-94b8d5ff3255">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>7</Width>
+        <Height>7</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="Gray" LineStyle="Solid" LineWidth="1" PointColor="Yellow" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Axes[0]/Commands/PathPlanner/Xnew" Name="Xnew₪MyAxis" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="5916000f-6eaa-430b-8426-97312f92f01c">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Plot>
+    <Plot Visible="true" LineColor="DarkSeaGreen" LineStyle="Solid" LineWidth="1" PointColor="Yellow" PointStyle="None" AntiAliased="false" BaseXValue="0" BaseYValue="0" CanScaleYAxis="true" FillMode="None" FillToBaseColor="Firebrick" FillStyle="Solid" LineToBaseColor="BurlyWood" LineToBaseStyle="Solid" LineToBaseWidth="1" FillBase="YValue" TooltipsEnabled="false" Register="tam://mc/Triamec-616/Axes[0]/Commands/PathPlanner/Vnew" Name="Vnew₪MyAxis" SamplingTime="PT0.0001S" XAxis="75bb073d-d849-4946-b29a-12c5e74c4f7c" YAxis="0fd27829-e098-4b77-b04a-e9f10f31e509">
+      <TooltipXFormat Format="0.##" Mode="Numeric" />
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Plot>
+  </Plots>
+  <XAxes>
+    <XAxis Caption="t [ms]" CaptionBackColor="buttonhighlight" CaptionFont="Segoe UI, 9pt" CaptionForeColor="buttontext" CaptionVisible="true" Mode="StripChart" OriginLineColor="#006600" OriginLineStyle="Solid" OriginLineVisible="false" OriginLineWidth="1" AutoMinorDivisionFrequency="4" AutoSpacing="true" BaselineColor="buttontext" BaselineVisible="false" InteractionMode="EditRange" Inverted="false" LogBase="10" Range="15733.5000000397;23912.3999999325" ScaleType="Linear" Id="75bb073d-d849-4946-b29a-12c5e74c4f7c" CaptionPosition="Bottom" MinimumHeight="0" Position="Bottom">
+      <MajorDivisions Base="0" Interval="5" LineWidth="1" TickColor="buttontext" TickLength="4" TickVisible="true" LabelBackColor="buttonhighlight" LabelFont="Segoe UI, 9pt" LabelForeColor="buttontext" LabelVisible="true" GridColor="Olive" GridlineStyle="Dot" GridVisible="true">
+        <LabelFormat Format="0.##" Mode="Numeric" />
+      </MajorDivisions>
+      <MinorDivisions Base="0" Interval="1" LineWidth="1" TickColor="buttontext" TickLength="2" TickVisible="true" GridColor="#4C4C00" GridlineStyle="Solid" GridVisible="false" />
+    </XAxis>
+  </XAxes>
+  <YAxes>
+    <YAxis Caption="ActualCurrentQ [A]" CaptionBackColor="buttonhighlight" CaptionFont="Segoe UI, 9pt" CaptionForeColor="#CC79A7" CaptionVisible="true" Mode="Fixed" OriginLineColor="#006600" OriginLineStyle="Solid" OriginLineVisible="false" OriginLineWidth="1" AutoMinorDivisionFrequency="4" AutoSpacing="true" BaselineColor="buttontext" BaselineVisible="false" InteractionMode="EditRange" Inverted="false" LogBase="10" Range="-2.49461613263926;0.101075054529995" ScaleType="Linear" Id="c3c10f69-4ca0-49a2-ac0d-d1b148b6535b" CaptionPosition="Left" MinimumWidth="0" Position="Left">
+      <MajorDivisions Base="0" Interval="5" LineWidth="1" TickColor="#CC79A7" TickLength="4" TickVisible="true" LabelBackColor="buttonhighlight" LabelFont="Segoe UI, 9pt" LabelForeColor="#CC79A7" LabelVisible="true" GridColor="Olive" GridlineStyle="Dot" GridVisible="false">
+        <LabelFormat Format="G5" Mode="Numeric" />
+      </MajorDivisions>
+      <MinorDivisions Base="0" Interval="1" LineWidth="1" TickColor="#CC79A7" TickLength="2" TickVisible="true" GridColor="#4C4C00" GridlineStyle="Solid" GridVisible="false" />
+    </YAxis>
+    <YAxis Caption="Position; Xnew [°]" CaptionBackColor="buttonhighlight" CaptionFont="Segoe UI, 9pt" CaptionForeColor="#000000" CaptionVisible="true" Mode="Fixed" OriginLineColor="#006600" OriginLineStyle="Solid" OriginLineVisible="false" OriginLineWidth="1" AutoMinorDivisionFrequency="4" AutoSpacing="true" BaselineColor="buttontext" BaselineVisible="false" InteractionMode="EditRange" Inverted="false" LogBase="10" Range="-1324.59256845221;125.105549064332" ScaleType="Linear" Id="5916000f-6eaa-430b-8426-97312f92f01c" CaptionPosition="Right" MinimumWidth="0" Position="Right">
+      <MajorDivisions Base="0" Interval="5" LineWidth="1" TickColor="#000000" TickLength="4" TickVisible="true" LabelBackColor="buttonhighlight" LabelFont="Segoe UI, 9pt" LabelForeColor="#000000" LabelVisible="true" GridColor="Olive" GridlineStyle="Dot" GridVisible="false">
+        <LabelFormat Format="G5" Mode="Numeric" />
+      </MajorDivisions>
+      <MinorDivisions Base="0" Interval="1" LineWidth="1" TickColor="#000000" TickLength="2" TickVisible="true" GridColor="#4C4C00" GridlineStyle="Solid" GridVisible="false" />
+    </YAxis>
+    <YAxis Caption="MasterError [°]" CaptionBackColor="buttonhighlight" CaptionFont="Segoe UI, 9pt" CaptionForeColor="#A1A1A1" CaptionVisible="true" Mode="Fixed" OriginLineColor="#006600" OriginLineStyle="Solid" OriginLineVisible="false" OriginLineWidth="1" AutoMinorDivisionFrequency="4" AutoSpacing="true" BaselineColor="buttontext" BaselineVisible="false" InteractionMode="EditRange" Inverted="false" LogBase="10" Range="-0.712624616995953;0.474513193773249" ScaleType="Linear" Id="7826d989-f823-4bb2-a366-2bb063a0591e" CaptionPosition="Left" MinimumWidth="0" Position="Left">
+      <MajorDivisions Base="0" Interval="5" LineWidth="1" TickColor="#A1A1A1" TickLength="4" TickVisible="true" LabelBackColor="buttonhighlight" LabelFont="Segoe UI, 9pt" LabelForeColor="#A1A1A1" LabelVisible="true" GridColor="Olive" GridlineStyle="Dot" GridVisible="false">
+        <LabelFormat Format="G5" Mode="Numeric" />
+      </MajorDivisions>
+      <MinorDivisions Base="0" Interval="1" LineWidth="1" TickColor="#A1A1A1" TickLength="2" TickVisible="true" GridColor="#4C4C00" GridlineStyle="Solid" GridVisible="false" />
+    </YAxis>
+    <YAxis Caption="Velocity; Vnew [°/s]" CaptionBackColor="buttonhighlight" CaptionFont="Segoe UI, 9pt" CaptionForeColor="#E69F00" CaptionVisible="true" Mode="Fixed" OriginLineColor="#006600" OriginLineStyle="Solid" OriginLineVisible="false" OriginLineWidth="1" AutoMinorDivisionFrequency="4" AutoSpacing="true" BaselineColor="buttontext" BaselineVisible="false" InteractionMode="EditRange" Inverted="false" LogBase="10" Range="-3764.56532836261;4889.28200388312" ScaleType="Linear" Id="0fd27829-e098-4b77-b04a-e9f10f31e509" CaptionPosition="Right" MinimumWidth="0" Position="Right">
+      <MajorDivisions Base="0" Interval="5" LineWidth="1" TickColor="#E69F00" TickLength="4" TickVisible="true" LabelBackColor="buttonhighlight" LabelFont="Segoe UI, 9pt" LabelForeColor="#E69F00" LabelVisible="true" GridColor="Olive" GridlineStyle="Dot" GridVisible="true">
+        <LabelFormat Format="G5" Mode="Numeric" />
+      </MajorDivisions>
+      <MinorDivisions Base="0" Interval="1" LineWidth="1" TickColor="#E69F00" TickLength="2" TickVisible="true" GridColor="#4C4C00" GridlineStyle="Solid" GridVisible="false" />
+    </YAxis>
+    <YAxis Caption="0" CaptionBackColor="buttonhighlight" CaptionFont="Segoe UI, 9pt" CaptionForeColor="#556B2F" CaptionVisible="true" Mode="Fixed" OriginLineColor="#006600" OriginLineStyle="Solid" OriginLineVisible="false" OriginLineWidth="1" AutoMinorDivisionFrequency="4" AutoSpacing="true" BaselineColor="buttontext" BaselineVisible="false" InteractionMode="EditRange" Inverted="false" LogBase="10" Range="-6.6960899881294;19.9743526992027" ScaleType="Linear" Id="488a5a98-bb8b-4833-86a2-5a57792739e6" CaptionPosition="Left" MinimumWidth="0" Position="Left">
+      <MajorDivisions Base="0" Interval="5" LineWidth="1" TickColor="#556B2F" TickLength="4" TickVisible="true" LabelBackColor="buttonhighlight" LabelFont="Segoe UI, 9pt" LabelForeColor="#556B2F" LabelVisible="true" GridColor="Olive" GridlineStyle="Dot" GridVisible="false">
+        <LabelFormat Format="G5" Mode="Numeric" />
+      </MajorDivisions>
+      <MinorDivisions Base="0" Interval="1" LineWidth="1" TickColor="#556B2F" TickLength="2" TickVisible="true" GridColor="#4C4C00" GridlineStyle="Solid" GridVisible="false" />
+    </YAxis>
+    <YAxis Caption="IsochronousMainState" CaptionBackColor="buttonhighlight" CaptionFont="Segoe UI, 9pt" CaptionForeColor="#9932CC" CaptionVisible="true" Mode="Fixed" OriginLineColor="#006600" OriginLineStyle="Solid" OriginLineVisible="false" OriginLineWidth="1" AutoMinorDivisionFrequency="4" AutoSpacing="true" BaselineColor="buttontext" BaselineVisible="false" InteractionMode="EditRange" Inverted="false" LogBase="10" Range="-121.655032211578;778.201643269731" ScaleType="Linear" Id="e03e81b3-f305-4603-bfe0-c942efd464d1" CaptionPosition="Right" MinimumWidth="0" Position="Right">
+      <MajorDivisions Base="0" Interval="5" LineWidth="1" TickColor="#9932CC" TickLength="4" TickVisible="true" LabelBackColor="buttonhighlight" LabelFont="Segoe UI, 9pt" LabelForeColor="#9932CC" LabelVisible="true" GridColor="Olive" GridlineStyle="Dot" GridVisible="false">
+        <LabelFormat Format="G5" Mode="Numeric" />
+      </MajorDivisions>
+      <MinorDivisions Base="0" Interval="1" LineWidth="1" TickColor="#9932CC" TickLength="2" TickVisible="true" GridColor="#4C4C00" GridlineStyle="Solid" GridVisible="false" />
+    </YAxis>
+    <YAxis Caption="IsochronousMainCommand" CaptionBackColor="buttonhighlight" CaptionFont="Segoe UI, 9pt, style=Bold" CaptionForeColor="#8B0000" CaptionVisible="true" Mode="Fixed" OriginLineColor="#006600" OriginLineStyle="Solid" OriginLineVisible="false" OriginLineWidth="1" AutoMinorDivisionFrequency="4" AutoSpacing="true" BaselineColor="buttontext" BaselineVisible="false" InteractionMode="EditRange" Inverted="false" LogBase="10" Range="-0.0231649435669384;7.88766328362157" ScaleType="Linear" Id="82282624-989b-4b99-85ad-94b8d5ff3255" CaptionPosition="Left" MinimumWidth="0" Position="Left">
+      <MajorDivisions Base="0" Interval="5" LineWidth="1" TickColor="#8B0000" TickLength="4" TickVisible="true" LabelBackColor="buttonhighlight" LabelFont="Segoe UI, 9pt, style=Bold" LabelForeColor="#8B0000" LabelVisible="true" GridColor="Olive" GridlineStyle="Dot" GridVisible="false">
+        <LabelFormat Format="G5" Mode="Numeric" />
+      </MajorDivisions>
+      <MinorDivisions Base="0" Interval="1" LineWidth="1" TickColor="#8B0000" TickLength="2" TickVisible="true" GridColor="#4C4C00" GridlineStyle="Solid" GridVisible="false" />
+    </YAxis>
+  </YAxes>
+  <Cursors>
+    <Cursor xsi:type="Trigger" Plot="ActualCurrentQ₪MyAxis" Id="cc9758a1-20bc-4e13-bcf5-01bc781d7e61" XPosition="0" YPosition="0" Color="#B30140" HorizontalCrosshairLength="20" HorizontalCrosshairMode="FullLength" LabelAlignment="Auto" LabelBackColor="#FFFFFF" LabelFont="Segoe UI, 9pt" LabelForeColor="Black" LabelVisible="false" LineStyle="DashDotDot" LineWidth="1" PointStyle="SolidDiamond" SnapMode="Fixed" VerticalCrosshairLength="20" VerticalCrosshairMode="FullLength">
+      <PointSize>
+        <Width>7</Width>
+        <Height>7</Height>
+      </PointSize>
+    </Cursor>
+    <Cursor xsi:type="ReferenceCursor" Plot="Vnew₪MyAxis" Id="c64b68b6-23df-4bbe-9487-274ea2827a71" XPosition="0" YPosition="1000" Color="Blue" HorizontalCrosshairLength="20" HorizontalCrosshairMode="Custom" LabelAlignment="Auto" LabelBackColor="#FFFFFF" LabelFont="Segoe UI, 9pt" LabelForeColor="Black" LabelVisible="true" LineStyle="DashDot" LineWidth="1" PointStyle="EmptyCircle" SnapMode="NearestPoint" VerticalCrosshairLength="20" VerticalCrosshairMode="FullLength">
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Cursor>
+    <Cursor xsi:type="RelativeCursor" Plot="ActualCurrentQ₪MyAxis" Id="c48c5061-703e-40b5-8567-a52c1d6dee41" XPosition="23912.399999932521" YPosition="152" Color="#009F21" HorizontalCrosshairLength="7" HorizontalCrosshairMode="Custom" LabelAlignment="Auto" LabelBackColor="#FFFFFF" LabelFont="Segoe UI, 9pt" LabelForeColor="Black" LabelVisible="false" LineStyle="DashDot" LineWidth="1" PointStyle="None" SnapMode="NearestPoint" VerticalCrosshairLength="20" VerticalCrosshairMode="FullLength" Reference="c64b68b6-23df-4bbe-9487-274ea2827a71">
+      <PointSize>
+        <Width>5</Width>
+        <Height>5</Height>
+      </PointSize>
+    </Cursor>
+  </Cursors>
+  <DigitalPlot>
+    <Position>1</Position>
+    <Scale>0.28125</Scale>
+  </DigitalPlot>
+</Scope>
