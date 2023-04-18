@@ -9,7 +9,7 @@ This *Tama* program example can be used to run step moves in positive or negativ
 
 The following screenshot shows a step moves procedure, with a start position at -365°, 4 subsequent steps of 10°, waiting 500ms after each move.
 
-![Measure Positive Scope](example_plot.png)
+![Scope record of a MeasurePositive procedure](./doc/example_plot.png)
 
 ## Parameters
 
