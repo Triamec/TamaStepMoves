@@ -18,7 +18,7 @@ static class StepMoves {
 		public const int Idle = 0;
         public const int WorkingPositive = 1;
         public const int WorkingNegative = 2;
-		public const int Wait = 99;
+		public const int Wait = 5;
 	}
 	static int _return_state;
     static class Command {
