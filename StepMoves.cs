@@ -34,10 +34,10 @@ static class StepMoves {
 	static int _wait; // in 10kHz counts, 10000 = 1s
     static int _timer; 
 	static int _repeats;
-	static float _step_velocity;
-	static float _step_size;
-	static float _start_pos_positive;
-	static float _start_pos_negative;
+	static float _stepVelocity;
+	static float _stepSize;
+	static float _startPositionPositive;
+	static float _startPositionNegative;
 
 
 	// Choose how to run the program. Additional entry points for other tasks can be specified in this same program.
@@ -55,7 +55,7 @@ static class StepMoves {
                 {
                     _counter = 0;
                     ReadParameters();
-                    MoveTo(_start_pos_positive);
+                    MoveTo(_startPositionPositive);
                     _timer = _wait;
                     Register.Application.TamaControl.IsochronousMainState = State.WorkingPositive;
 				}
@@ -63,7 +63,7 @@ static class StepMoves {
 				{
                     _counter = 0;
                     ReadParameters();
-                    MoveTo(_start_pos_negative);
+                    MoveTo(_startPositionNegative);
                     _timer = _wait;
                     Register.Application.TamaControl.IsochronousMainState = State.WorkingNegative;
 				}
@@ -90,7 +90,7 @@ static class StepMoves {
 					}
 					else
 					{
-                        MoveStepAndWait(_step_size, _wait);
+                        MoveStepAndWait(_stepSize, _wait);
 					}
                 } 
 				else if (Register.Axes_0.Signals.PathPlanner.Done)
@@ -110,7 +110,7 @@ static class StepMoves {
                     }
                     else
                     {
-                        MoveStepAndWait(-_step_size, _wait);
+                        MoveStepAndWait(-_stepSize, _wait);
                     }
                 }
                 else if (Register.Axes_0.Signals.PathPlanner.Done)
@@ -137,10 +137,10 @@ static class StepMoves {
 	{
         _wait = Register.Application.Parameters.Integers[0];
         _repeats = Register.Application.Parameters.Integers[1];
-        _step_size = Register.Application.Parameters.Floats[0];
-        _step_velocity = Register.Application.Parameters.Floats[1];
-        _start_pos_positive = Register.Application.Parameters.Floats[2];
-        _start_pos_negative = Register.Application.Parameters.Floats[3];
+        _stepSize = Register.Application.Parameters.Floats[0];
+        _stepVelocity = Register.Application.Parameters.Floats[1];
+        _startPositionPositive = Register.Application.Parameters.Floats[2];
+        _startPositionNegative = Register.Application.Parameters.Floats[3];
     }
 
 	static void MoveStepAndWait(float step, int wait)
@@ -148,14 +148,14 @@ static class StepMoves {
         _timer = wait;
         _counter ++;
         Register.Axes_0.Commands.PathPlanner.Xnew = step;
-        Register.Axes_0.Commands.PathPlanner.Vnew = _step_velocity;
+        Register.Axes_0.Commands.PathPlanner.Vnew = _stepVelocity;
         Register.Axes_0.Commands.PathPlanner.Command = PathPlannerCommand.MoveRelative_Vel;
     }
 
     static void MoveTo(float x)
 	{
         Register.Axes_0.Commands.PathPlanner.Xnew = x;
-		Register.Axes_0.Commands.PathPlanner.Vnew = _step_velocity;
+		Register.Axes_0.Commands.PathPlanner.Vnew = _stepVelocity;
         Register.Axes_0.Commands.PathPlanner.Command = PathPlannerCommand.MoveAbsolute_Vel;
     }
 }
