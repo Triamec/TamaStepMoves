@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6752B1DC-C883-444B-B522-A98F0F633417}</ProjectGuid>
+    <ProjectGuid>{6CF698F2-FA0B-4ECA-9B32-82AF8D9D154C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Triamec.Tam.Samples</RootNamespace>
